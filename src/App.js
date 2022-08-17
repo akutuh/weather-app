@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import axios from 'axios'
-import Weather from './components/Weather'
 import WeatherForm from './components/WeatherForm'
-import './App.css'
+import Weather from './components/Weather'
 import WeatherChart from './components/WeatherChart'
+import './App.css'
 
 const App = () => {
   const [city, setCity] = useState('')
