@@ -1,4 +1,4 @@
-const Weather = ({ weatherData, city }) => {
+const WeatherCity = ({ weatherData, city }) => {
   if (weatherData === null) {
     return null
   }
@@ -12,4 +12,4 @@ const Weather = ({ weatherData, city }) => {
   )
 }
 
-export default Weather
+export default WeatherCity
