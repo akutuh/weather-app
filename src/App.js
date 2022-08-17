@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import WeatherForm from './components/WeatherForm'
-//import Weather from './components/Weather'
+import Weather from './components/Weather'
 import WeatherChart from './components/WeatherChart'
 import './App.css'
 
@@ -31,6 +31,7 @@ const App = () => {
   return (
     <div className="App">
       <WeatherForm onChange={handleLocation} formChange={getWeather} />
+      <Weather weatherData={weatherData} city={city} />
       <WeatherChart weatherForecastData={weatherForecastData} />
     </div>
   )
